@@ -1,0 +1,252 @@
+:root {
+  font-family: "Fraunces";
+
+  --red-400-color: hsl(7, 99%, 70%);
+  --yellow-500-color: hsl(51, 100%, 49%);
+  --green-800-color: hsl(167, 40%, 24%);
+  --blue-800-color: hsl(198, 62%, 26%);
+  --green-500-color: hsl(167, 34%, 41%);
+  --green-cyan-color: hsl(166, 45%, 70%);
+
+  --grey-950-color: hsl(212, 27%, 19%);
+  --grey-600-color: hsl(213, 9%, 39%);
+  --grey-550-color: hsl(232, 10%, 55%);
+  --grey-400-color: hsl(210, 4%, 67%);
+  --white-color: hsl(0, 100%, 100%);
+
+  font-size: 18px;
+}
+
+/*******
+* Hero *
+*******/
+.hero {
+  background-image: url("../images/mobile/image-header.jpg");
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Fraunces";
+  font-size: 1.6em;
+  color: var(--white-color);
+  font-weight: 900;
+  letter-spacing: 8px;
+}
+@media (min-width: 375px) {
+  .header h1 {
+    font-size: 2.2em;
+  }
+}
+
+.logo,
+.hamburger {
+  cursor: pointer;
+}
+
+.navbar-button {
+  font-family: "Barlow";
+  font-weight: 600;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.contact-button {
+  font-family: "Fraunces";
+  background-color: var(--white-color);
+  border-radius: 29px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--grey-950-color);
+}
+.contact-button:hover {
+  color: var(--white-color);
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.modal {
+  border: none;
+  background-color: unset;
+  font-family: "Barlow";
+  outline: none;
+}
+.modal::backdrop {
+  background-color: transparent;
+}
+
+.modal-buttons {
+  background-color: var(--white-color);
+}
+
+.modal-button {
+  color: var(--grey-950-color);
+}
+
+.modal-contact {
+  font-family: "Fraunces";
+  background-color: var(--yellow-500-color);
+  border-radius: 29px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.triangle {
+  border-style: solid;
+  border-width: 0 0 26px 26px;
+  border-color: transparent transparent var(--white-color) transparent;
+}
+
+/***********
+* Showcase *
+***********/
+.showcase-header {
+  font-size: 1.8em;
+  font-weight: 900;
+  color: var(--grey-950-color);
+}
+@media (min-width: 768px) {
+  .showcase-header {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 1024px) {
+  .showcase-header {
+    font-size: 2.4em;
+  }
+}
+
+.showcase-text {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .showcase-text {
+    text-align: left;
+  }
+}
+
+.showcase-paragraph {
+  color: var(--grey-600-color);
+  color: var(--grey-550-color);
+  font-family: "Barlow";
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.showcase-button {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--grey-950-color);
+  border-bottom: solid 1px var(--red-400-color);
+  cursor: pointer;
+}
+
+/***********
+* Services *
+***********/
+.service {
+  text-align: center;
+}
+
+.graphic-design {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+@media (min-width: 768px) {
+  .graphic-design {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+}
+
+.photography {
+  background-image: url("../images/mobile/image-photography.jpg");
+}
+@media (min-width: 768px) {
+  .photography {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+}
+
+.service-header {
+  font-family: "Fraunces";
+  font-size: 1.5em;
+  font-weight: 900;
+  color: var(--grey-950-color);
+}
+
+.service-paragraph {
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-600-color);
+  font-weight: 600;
+}
+
+/***************
+* Testimonials *
+***************/
+.testimonials {
+  text-align: center;
+}
+
+.testimonials-header {
+  font-family: "Fraunces";
+  color: var(--grey-550-color);
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin: 1em;
+}
+
+.testimonial-paragraph {
+  font-family: "Barlow";
+  color: var(--grey-600-color);
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.testimonial-image {
+  clip-path: circle();
+}
+
+.testimonial-name {
+  font-family: "Fraunces";
+  color: var(--grey-950-color);
+  font-weight: 900;
+}
+
+.testimonial-occupation {
+  font-family: "Barlow";
+  color: var(--grey-550-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/*********
+* Footer *
+*********/
+.footer {
+  background-color: var(--green-cyan-color);
+}
+
+.footer-logo {
+  cursor: pointer;
+}
+
+.footer-link {
+  color: var(--green-500-color);
+  font-weight: 600;
+  font-family: "Barlow";
+  cursor: pointer;
+}
+
+.social-image {
+  cursor: pointer;
+}

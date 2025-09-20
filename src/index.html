@@ -1,68 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <main class="app">
+      <div class="hero">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.svg" alt="sunnyside" />
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-button">About</div>
+            <div class="navbar-button">Services</div>
+            <div class="navbar-button">Projects</div>
+            <div class="navbar-button contact-button">CONTACT</div>
+          </div>
+          <div class="hamburger" id="open-modal">
+            <img src="images/icon-hamburger.svg" alt="hamburger menu" />
+          </div>
+        </div>
+        <div class="header">
+          <h1>WE ARE CREATIVES</h1>
+        </div>
+        <div><img src="images/icon-arrow-down.svg" /></div>
+        <dialog id="modal" class="modal">
+          <div class="triangle-container">
+            <div class="triangle"></div>
+          </div>
+          <div class="modal-buttons">
+            <div class="modal-button">About</div>
+            <div class="modal-button">Services</div>
+            <div class="modal-button">Projects</div>
+            <div class="modal-button modal-contact">CONTACT</div>
+            <!-- <button id="close-modal">close</button> -->
+          </div>
+        </dialog>
+      </div>
+      <div class="showcase">
+        <div class="showcase-image showcase-first-image">
+          <img src="images/mobile/image-transform.jpg" alt="Transform" />
+        </div>
+        <div class="showcase-text showcase-first-text">
+          <div class="showcase-header">Transform your brand</div>
+          <div class="showcase-paragraph">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </div>
+          <div class="showcase-button">LEARN MORE</div>
+        </div>
+        <div class="showcase-image showcase-second-image">
+          <img src="images/mobile/image-stand-out.jpg" alt="Stand out" />
+        </div>
+        <div class="showcase-text showcase-second-text">
+          <div class="showcase-header">Stand out to the right audience</div>
+          <div class="showcase-paragraph">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </div>
+          <div class="showcase-button">LEARN MORE</div>
+        </div>
+      </div>
+      <div class="services">
+        <div class="service graphic-design">
+          <!-- <div> -->
+          <!--   <img -->
+          <!--     src="images/mobile/image-graphic-design.jpg" -->
+          <!--     alt="Graphic Design" -->
+          <!--   /> -->
+          <!-- </div> -->
+          <div class="service-header">Graphic design</div>
+          <div class="service-paragraph">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </div>
+        </div>
+        <div class="service photography">
+          <!-- <div> -->
+          <!--   <img src="images/mobile/image-photography.jpg" alt="Photography" /> -->
+          <!-- </div> -->
+          <div class="service-header">Photography</div>
+          <div class="service-paragraph">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonials-header">CLIENT TESTIMONIALS</div>
+        <div class="testimonials-list">
+          <div class="testimonial">
+            <div class="testimonial-image">
+              <img src="images/image-emily.jpg" alt="Emily" />
+            </div>
+            <div class="testimonial-paragraph">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Emily R.</div>
+              <div class="testimonial-occupation">Marketing Director</div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-image">
+              <img src="images/image-thomas.jpg" alt="Thomas" />
+            </div>
+            <div class="testimonial-paragraph">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Thomas S.</div>
+              <div class="testimonial-occupation">Chief Operating Officer</div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-image">
+              <img src="images/image-jennie.jpg" alt="Jennie" />
+            </div>
+            <div class="testimonial-paragraph">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </div>
+            <div class="testimonial-info">
+              <div class="testimonial-name">Jennie F.</div>
+              <div class="testimonial-occupation">Business Owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-image">
+          <img
+            src="images/mobile/image-gallery-milkbottles.jpg"
+            alt="Milk bottles"
+          />
+        </div>
+        <div class="gallery-image">
+          <img src="images/mobile/image-gallery-orange.jpg" alt="Orange" />
+        </div>
+        <div class="gallery-image">
+          <img src="images/mobile/image-gallery-cone.jpg" alt="Cone" />
+        </div>
+        <div class="gallery-image">
+          <img
+            src="images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="Sugar cubes"
+          />
+        </div>
+      </div>
+      <div class="gallery-desktop">
+        <div class="gallery-image">
+          <img
+            src="images/desktop/image-gallery-milkbottles.jpg"
+            alt="Milk bottles"
+          />
+        </div>
+        <div class="gallery-image">
+          <img src="images/desktop/image-gallery-orange.jpg" alt="Orange" />
+        </div>
+        <div class="gallery-image">
+          <img src="images/desktop/image-gallery-cone.jpg" alt="Cone" />
+        </div>
+        <div class="gallery-image">
+          <img
+            src="images/desktop/image-gallery-sugarcubes.jpg"
+            alt="Sugar cubes"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="images/logo.svg" alt="sunnyside" />
+        </div>
+        <div class="footer-links">
+          <div class="footer-link">About</div>
+          <div class="footer-link">Services</div>
+          <div class="footer-link">Projects</div>
+        </div>
+        <div class="socials">
+          <div class="social-image">
+            <img src="images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="social-image">
+            <img src="images/icon-instagram.svg" alt="instagram" />
+          </div>
+          <div class="social-image">
+            <img src="images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="social-image">
+            <img src="images/icon-pinterest.svg" alt="pinterest" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
